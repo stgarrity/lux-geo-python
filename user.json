@@ -1,0 +1,92 @@
+{
+    "id": "REDACTED",
+    "email": "REDACTED",
+    "firstname": "REDACTED",
+    "lastname": "REDACTED",
+    "accounttype": 0,
+    "pendinginvites": 0,
+    "location": [
+        {
+            "id": "REDACTED",
+            "name": "REDACTED",
+            "scheduletype": 0,
+            "locationtype": 1,
+            "isverified": true,
+            "timezone": 8,
+            "daylightsaving": true,
+            "isstudio": false,
+            "unittype": 0,
+            "version": 2,
+            "address": {
+                "address1": "REDACTED",
+                "address2": null,
+                "city": "REDACTED",
+                "state": "REDACTED",
+                "postalcode": "REDACTED",
+                "countrycode": "REDACTED"
+            },
+            "geofencing": null,
+            "users": [
+                {
+                    "id": "REDACTED",
+                    "email": "REDACTED",
+                    "firstname": "REDACTED",
+                    "lastname": "REDACTED",
+                    "accounttype": 0,
+                    "locationroles": [
+                        {
+                            "id": "REDACTED",
+                            "locationid": "REDACTED",
+                            "role": {
+                                "id": "REDACTED",
+                                "name": "Owner"
+                            }
+                        }
+                    ],
+                    "isgpsenabled": false
+                }
+            ],
+            "invitations": [],
+            "devices": [
+                {
+                    "id": "REDACTED",
+                    "devicemodel": 0,
+                    "tempformat": 1,
+                    "currenttemp": 54.0,
+                    "desiredTemp": -1.0,
+                    "lastconnected": "2025-01-30T19:58:16.5191746+00:00",
+                    "isonline": false,
+                    "mode": 1,
+                    "systemmode": 0,
+                    "runmode": 2,
+                    "name": "Living Room",
+                    "firstinstalldate": "0001-01-01T00:00:00+00:00",
+                    "filterwarn": false,
+                    "autochange": false,
+                    "batterywarning": 2,
+                    "optout": false,
+                    "partnername": "LUX",
+                    "activealerts": null,
+                    "expectedreconnecttime": 0,
+                    "timesecondsoffset": -28800.0
+                }
+            ],
+            "demandresponse": {
+                "programname": "REDACTED",
+                "automaticcheckavailableoffers": true,
+                "emailmeaboutoffer": false,
+                "intervals": null,
+                "optout": false,
+                "ehenrollstatus": 0,
+                "reasonforunenroll": null,
+                "programemail": null
+            }
+        }
+    ],
+    "isgpsenabled": true,
+    "appversion": {
+        "partnername": "LUX",
+        "androidminversion": "93",
+        "iosminversion": "2.0.71"
+    }
+}

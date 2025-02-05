@@ -1,0 +1,350 @@
+{
+    "profile": 2,
+    "batterywarning": 2,
+    "batterytype": 2,
+    "dateformat": 1,
+    "language": 0,
+    "version": 727068,
+    "id": "REDACTED",
+    "locationid": "REDACTED",
+    "serialnumber": "REDACTED",
+    "isprovisioned": true,
+    "firmwareversion": "0770.3601",
+    "isonline": false,
+    "lastconnected": "2025-01-30T19:58:16.5191746+00:00",
+    "name": "Living Room",
+    "purchasedate": "0001-01-01T00:00:00+00:00",
+    "devicemodel": 0,
+    "isotarequired": false,
+    "poweruplog": null,
+    "rssi": null,
+    "filterwarn": false,
+    "filtercountdown": 7118,
+    "filterlife": 90,
+    "currenttemp": 54.0,
+    "desiredtemp": -1.0,
+    "powersource": 1,
+    "voltlevel": "DC",
+    "prioritymode": 1,
+    "autochange": false,
+    "runmode": 2,
+    "fanmode": 0,
+    "mode": 1,
+    "systemmode": 0,
+    "holdcool": 76.0,
+    "holdheat": 68.0,
+    "overrideheat": 45.0,
+    "overridecool": 45.0,
+    "awayheat": 62.0,
+    "awaycool": 83.0,
+    "swingheat": 1,
+    "swingcool": 1,
+    "stage2offsetheat": 0,
+    "stage2offsetcool": 0,
+    "fancycle": 0,
+    "fantrigger": 0,
+    "tempformat": 1,
+    "timeformat": 1,
+    "minheatlimit": 45.0,
+    "maxheatlimit": 90.0,
+    "mincoollimit": 45.0,
+    "maxcoollimit": 90.0,
+    "minontime": 5,
+    "minofftime": 5,
+    "screenontime": 10,
+    "lock": 0,
+    "systemtype": 0,
+    "heatpumpvalvetype": 0,
+    "emergencyheat": false,
+    "airsensoroffset": 0,
+    "dualfuel": false,
+    "balancepointhigh": 450,
+    "balancepointlow": 300,
+    "auxlockout": false,
+    "stageauxiliaryoffset": 0,
+    "timesecondsoffset": -28800.0,
+    "outdoorairtemp": 0.0,
+    "overrideduration": 0,
+    "firstinstalldate": "0001-01-01T00:00:00+00:00",
+    "outputstatus": null,
+    "pollrate": null,
+    "wifiotaretrycount": 0,
+    "mcuotaretrycount": 0,
+    "schedule": {
+        "heatweekschedule": {
+            "days": [
+                {
+                    "phases": 2,
+                    "events": [
+                        {
+                            "hour": 510,
+                            "temp": 70.0
+                        },
+                        {
+                            "hour": 990,
+                            "temp": 70.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 2,
+                    "events": [
+                        {
+                            "hour": 510,
+                            "temp": 70.0
+                        },
+                        {
+                            "hour": 990,
+                            "temp": 70.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 2,
+                    "events": [
+                        {
+                            "hour": 510,
+                            "temp": 70.0
+                        },
+                        {
+                            "hour": 990,
+                            "temp": 70.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 2,
+                    "events": [
+                        {
+                            "hour": 510,
+                            "temp": 70.0
+                        },
+                        {
+                            "hour": 990,
+                            "temp": 70.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 2,
+                    "events": [
+                        {
+                            "hour": 510,
+                            "temp": 70.0
+                        },
+                        {
+                            "hour": 990,
+                            "temp": 70.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 2,
+                    "events": [
+                        {
+                            "hour": 510,
+                            "temp": 70.0
+                        },
+                        {
+                            "hour": 990,
+                            "temp": 70.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 2,
+                    "events": [
+                        {
+                            "hour": 510,
+                            "temp": 70.0
+                        },
+                        {
+                            "hour": 990,
+                            "temp": 70.0
+                        }
+                    ]
+                }
+            ]
+        },
+        "coolweekschedule": {
+            "days": [
+                {
+                    "phases": 4,
+                    "events": [
+                        {
+                            "hour": 360,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 480,
+                            "temp": 83.0
+                        },
+                        {
+                            "hour": 1080,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 1320,
+                            "temp": 80.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 4,
+                    "events": [
+                        {
+                            "hour": 360,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 480,
+                            "temp": 83.0
+                        },
+                        {
+                            "hour": 1080,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 1320,
+                            "temp": 80.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 4,
+                    "events": [
+                        {
+                            "hour": 360,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 480,
+                            "temp": 83.0
+                        },
+                        {
+                            "hour": 1080,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 1320,
+                            "temp": 80.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 4,
+                    "events": [
+                        {
+                            "hour": 360,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 480,
+                            "temp": 83.0
+                        },
+                        {
+                            "hour": 1080,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 1320,
+                            "temp": 80.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 4,
+                    "events": [
+                        {
+                            "hour": 360,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 480,
+                            "temp": 83.0
+                        },
+                        {
+                            "hour": 1080,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 1320,
+                            "temp": 80.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 4,
+                    "events": [
+                        {
+                            "hour": 360,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 480,
+                            "temp": 83.0
+                        },
+                        {
+                            "hour": 1080,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 1320,
+                            "temp": 80.0
+                        }
+                    ]
+                },
+                {
+                    "phases": 4,
+                    "events": [
+                        {
+                            "hour": 360,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 480,
+                            "temp": 83.0
+                        },
+                        {
+                            "hour": 1080,
+                            "temp": 76.0
+                        },
+                        {
+                            "hour": 1320,
+                            "temp": 80.0
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "highroomtempthreshold": 95.0,
+    "lowroomtempthreshold": 45.0,
+    "alerts": [
+        {
+            "alerttype": 1,
+            "name": "High Temperature",
+            "isenabled": true
+        },
+        {
+            "alerttype": 2,
+            "name": "Low Temperature",
+            "isenabled": true
+        },
+        {
+            "alerttype": 4,
+            "name": "Filter Replacement",
+            "isenabled": false
+        },
+        {
+            "alerttype": 3,
+            "name": "Low Battery",
+            "isenabled": true
+        }
+    ],
+    "activealerts": null,
+    "optout": false,
+    "expectedreconnecttime": 0,
+    "partnername": "LUX",
+    "batterylevel": 95
+}
