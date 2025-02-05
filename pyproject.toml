@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luxgeo"  # Replace with your package name
+version = "0.1.0"
+description = "A very basic Python API for Lux Geo thermostats"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Steve Garrity", email = "sgarrity@gmail.com" }]
+requires-python = ">=3.7"
+dependencies = [
+    "aiohttp",
+    "pkce",
+]
+
+[project.urls]
+Homepage = "https://github.com/stgarrity/lux-geo-python"
+Repository = "https://github.com/stgarrity/lux-geo-python"

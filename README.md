@@ -9,3 +9,5 @@ doesn't work with Home Assistant (yet).
 Usage: define your own `.env` file based on `.env_sample` and run `python main.py`.
 
 For development/testing, I find it useful to cache `TOKENS` in the `.env` file and not force auth every time.
+
+`auth.py` contains a very lazy hack to enable headless PKCE auth, and could be improved and factored out to its own package.
