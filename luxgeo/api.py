@@ -7,10 +7,12 @@ from helpers import http_request
 class LuxAPI:
     """API for Lux Thermostat."""
 
-    def __init__(self, tokens) -> None:
+    def __init__(self, username, password, tokens) -> None:
         """Initialize the API."""
         self.access_token = tokens["access_token"]
         self.refresh_token = tokens["refresh_token"]
+        self.username = username
+        self.password = password
 
     async def get_user(self) -> dict:
         """Get the user."""

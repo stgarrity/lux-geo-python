@@ -15,7 +15,7 @@ async def main():
 
     print(tokens)
 
-    api = LuxAPI(tokens)
+    api = LuxAPI(os.getenv("USERNAME"), os.getenv("PASSWORD"), tokens)
     u = await api.get_user()
     device_id = u["location"][0]["devices"][0]["id"]
     d = await api.get_device_state(device_id)
