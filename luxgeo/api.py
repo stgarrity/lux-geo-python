@@ -1,8 +1,7 @@
 """API for Lux Thermostat."""
 
 import json
-
-import aiohttp
+from helpers import http_request
 
 
 class LuxAPI:
@@ -16,44 +15,26 @@ class LuxAPI:
     async def get_user(self) -> dict:
         """Get the user."""
         url = "https://www.myluxstat.io/api/location/user"
-        async with (
-            aiohttp.ClientSession() as session,
-            session.get(
-                url, headers={"Authorization": f"Bearer {self.access_token}"}
-            ) as response,
-        ):
-            res = await response.text()
-            return json.loads(res)
+        headers = {"Authorization": f"Bearer {self.access_token}"}
+        res, _, _ = await http_request("get", url, headers=headers)
+        return json.loads(res)
 
     async def get_device_state(self, device_id) -> dict:
         """Get the device state."""
         url = "https://www.myluxstat.io/api/device"
-        async with (
-            aiohttp.ClientSession() as session,
-            session.get(
-                url,
-                headers={
-                    "Authorization": f"Bearer {self.access_token}",
-                    "Deviceid": device_id,
-                },
-            ) as response,
-        ):
-            res = await response.text()
-            return json.loads(res)
+        headers = {
+            "Authorization": f"Bearer {self.access_token}",
+            "Deviceid": device_id,
+        }
+        res, _, _ = await http_request("get", url, headers=headers)
+        return json.loads(res)
 
     async def set_device_state(self, device_id, state) -> dict:
         """Set the device state."""
         url = "https://www.myluxstat.io/api/device"
-        async with (
-            aiohttp.ClientSession() as session,
-            session.put(
-                url,
-                headers={
-                    "Authorization": f"Bearer {self.access_token}",
-                    "Deviceid": device_id,
-                },
-                json=state,
-            ) as response,
-        ):
-            res = await response.text()
-            return json.loads(res)
+        headers = {
+            "Authorization": f"Bearer {self.access_token}",
+            "Deviceid": device_id,
+        }
+        res, _, _ = await http_request("put", url, headers=headers, json_data=state)
+        return json.loads(res)

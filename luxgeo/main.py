@@ -10,8 +10,8 @@ from auth import login
 dotenv.load_dotenv()
 
 async def main():
-    # tokens = await login(os.getenv("USERNAME"), os.getenv("PASSWORD"))
-    tokens = json.loads(os.getenv("TOKENS"))
+    tokens = await login(os.getenv("USERNAME"), os.getenv("PASSWORD"))
+    # tokens = json.loads(os.getenv("TOKENS"))
 
     print(tokens)
 
