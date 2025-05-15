@@ -18,7 +18,7 @@ class LuxAPI:
         """Get the user."""
         url = "https://www.myluxstat.io/api/location/user"
         headers = {"Authorization": f"Bearer {self.access_token}"}
-        res, _, _ = await http_request("get", url, headers=headers)
+        res, _, _ = await self._make_request("get", url, headers=headers)
         return json.loads(res)
 
     async def get_device_state(self, device_id) -> dict:
@@ -28,7 +28,7 @@ class LuxAPI:
             "Authorization": f"Bearer {self.access_token}",
             "Deviceid": device_id,
         }
-        res, _, _ = await http_request("get", url, headers=headers)
+        res, _, _ = await self._make_request("get", url, headers=headers)
         return json.loads(res)
 
     async def set_device_state(self, device_id, state) -> dict:
@@ -38,5 +38,9 @@ class LuxAPI:
             "Authorization": f"Bearer {self.access_token}",
             "Deviceid": device_id,
         }
-        res, _, _ = await http_request("put", url, headers=headers, json_data=state)
+        res, _, _ = await self._make_request("put", url, headers=headers, json_data=state)
+        return json.loads(res)
+
+    async def _make_request(self, method, url, headers, data, json_data):
+        res, _, _ = await http_request(method, url, headers=headers, data=data, json_data=json_data)
         return json.loads(res)
