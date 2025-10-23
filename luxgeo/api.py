@@ -1,8 +1,8 @@
 """API for Lux Thermostat."""
 
 import json
-from auth import login
-from helpers import http_request
+from .auth import login
+from .helpers import http_request
 
 class LuxAPI:
     """API for Lux Thermostat."""

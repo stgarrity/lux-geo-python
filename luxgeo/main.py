@@ -4,8 +4,8 @@ import os
 
 import dotenv
 
-from api import LuxAPI
-from auth import login
+from .api import LuxAPI
+from .auth import login
 
 dotenv.load_dotenv()
 
